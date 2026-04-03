@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  /* Wordmark: alineado con tipografía tipo logo (sans mayúsculas, peso medio) */
+  --font-brand: 'Montserrat', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  /* Marca: púrpura / magenta del logo (aprox. #7A0099 → #A100C1) */
+  --color-brand-50: #fdf4ff;
+  --color-brand-100: #fae8ff;
+  --color-brand-200: #f5d0fe;
+  --color-brand-300: #e879f9;
+  --color-brand-400: #d946ef;
+  --color-brand-500: #a100c1;
+  --color-brand-600: #7a0099;
+  --color-brand-700: #62007a;
+  --color-brand-800: #4a005c;
+  --color-brand-900: #3d0d4a;
+  --color-brand-950: #1f0a24;
+  --color-accent: oklch(0.42 0.2 308);
+  --color-accent-muted: oklch(0.48 0.16 308);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased text-slate-800 bg-slate-50 dark:bg-slate-950 dark:text-slate-200;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600 dark:outline-brand-400;
+  }
+}
+
+@utility font-brand {
+  font-family: var(--font-brand);
+}
+
+/* Degradado tipo logo: claro/magenta arriba → púrpura profundo abajo */
+@layer components {
+  .bg-btn-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-brand-400) 0%,
+      var(--color-brand-500) 32%,
+      var(--color-brand-600) 72%,
+      var(--color-brand-700) 100%
+    );
+  }
+
+  .bg-btn-gradient:hover:not(:disabled):not([data-disabled]) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-brand-300) 0%,
+      var(--color-brand-500) 40%,
+      var(--color-brand-600) 85%,
+      var(--color-brand-700) 100%
+    );
+  }
+
+  .bg-btn-gradient:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+
+  /* Enlace “saltar al contenido”: Tailwind no compone focus: con clases custom */
+  .skip-link:focus-visible {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-brand-400) 0%,
+      var(--color-brand-500) 32%,
+      var(--color-brand-600) 72%,
+      var(--color-brand-700) 100%
+    );
+  }
+}
+
+/* Scroll offset for sticky navbar */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
