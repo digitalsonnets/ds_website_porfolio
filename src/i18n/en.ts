@@ -13,10 +13,10 @@ const en = {
     closeMenu: 'Close menu',
   },
   hero: {
-    badge: 'Frontend · Automation · APIs',
-    title: 'Clear interfaces, more efficient processes.',
+    badge: 'Backend · APIs · Frontend · Automation',
+    title: 'Clear interfaces, solid services, more efficient processes.',
     subtitle:
-      'Frontend developers focused on API integration, workflow automation, and measurable performance.',
+      'Full-stack development: coherent APIs and data on the backend, integration across layers, workflow automation, and measurable performance.',
     ctaPrimary: 'View projects',
     ctaSecondary: 'Get in touch',
     langLabel: 'Language',
@@ -27,12 +27,13 @@ const en = {
   about: {
     title: 'About',
     bio:
-      'Frontend developers focused on digital products that reduce friction: reusable components, reliable data pipelines, and accessible experiences. We combine TypeScript, React, and automation tooling to ship value continuously.',
+      'Web developers focused on the backend, with solid experience building and maintaining scalable applications, plus strong frontend skills using HTML, CSS, JavaScript, and React. We specialize in automation, system performance optimization, and improving digital infrastructure. With a strong background in technical support and quality assurance, we focus on efficient, reliable, user-centered solutions.',
     skillsTitle: 'Stack & focus',
     skills: [
       'React & TypeScript',
+      'Node.js & REST / GraphQL APIs',
       'Tailwind CSS',
-      'REST / GraphQL APIs',
+      'PostgreSQL / SQL',
       'CI/CD & scripts',
       'Web Vitals performance',
       'Accessibility (WCAG)',
@@ -76,6 +77,12 @@ const en = {
     subtitle: 'How I can help your team or product.',
     items: [
       {
+        id: 'api',
+        title: 'Backend and API integration',
+        description:
+          'REST/GraphQL endpoints and server-side data; consuming and orchestrating external APIs. Clear contracts and consistent validation and errors across backend and client.',
+      },
+      {
         id: 'frontend',
         title: 'Frontend development',
         description:
@@ -86,12 +93,6 @@ const en = {
         title: 'Process automation',
         description:
           'Scripts, integrations, and flows that remove repetitive tasks and reduce manual errors.',
-      },
-      {
-        id: 'api',
-        title: 'API integration',
-        description:
-          'Consuming and orchestrating external services with robust error handling and clear UI states.',
       },
       {
         id: 'perf',
@@ -158,10 +159,10 @@ const en = {
       projects:
         'Under Projects you will find four examples: ops dashboard, CRM connector, design system, and optimized landing.',
       services:
-        'I offer frontend development, automation, API integration, and performance optimization.',
+        'I offer backend and API integration, frontend development, process automation, and performance optimization.',
       automation:
         'Automation covers scripts, integrations, and flows with retries and monitoring to reduce manual work.',
-      api: 'I integrate REST/GraphQL APIs with data validation, error handling, and clear loading states.',
+      api: 'I design and integrate APIs and the backend layer—endpoints, server-side data, and external services—with validation, controlled errors, and clear states.',
       contact: 'Use the form or WhatsApp and social links in the Contact section.',
       stack: 'Typical stack: React, TypeScript, Tailwind, testing with Vitest, and a focus on accessibility.',
       experience:

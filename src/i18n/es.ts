@@ -13,10 +13,10 @@ const es = {
     closeMenu: 'Cerrar menú',
   },
   hero: {
-    badge: 'Frontend · Automatización · APIs',
-    title: 'Interfaces claras, procesos más eficientes.',
+    badge: 'Backend · APIs · Frontend · Automatización',
+    title: 'Interfaces claras, servicios sólidos, procesos más eficientes.',
     subtitle:
-      'Desarrollo frontend enfocado en integración de APIs, automatización de flujos y rendimiento medible.',
+      'Desarrollo full stack: APIs y datos coherentes en backend, integración entre capas, automatización de flujos y rendimiento medible.',
     ctaPrimary: 'Ver proyectos',
     ctaSecondary: 'Contactar',
     langLabel: 'Idioma',
@@ -27,12 +27,13 @@ const es = {
   about: {
     title: 'Nosotros',
     bio:
-      'Desarrolladores frontend con interés en productos digitales que reducen fricción: componentes reutilizables, pipelines de datos fiables y experiencias accesibles. Combinamos TypeScript, React y herramientas de automatización para entregar valor de forma continua.',
+      'Desarrolladores web enfocados en Backend con sólida experiencia en la creación y mantenimiento de aplicaciones escalables, además de contar con fuertes habilidades en frontend utilizando HTML, CSS, JavaScript y React. Especializados en automatización, optimización del rendimiento de sistemas y mejora de la infraestructura digital. Con una sólida base en soporte técnico y control de calidad, enfocados en ofrecer soluciones eficientes, confiables y centradas en el usuario.',
     skillsTitle: 'Stack y enfoque',
     skills: [
       'React & TypeScript',
+      'Node.js & APIs REST / GraphQL',
       'Tailwind CSS',
-      'APIs REST / GraphQL',
+      'PostgreSQL / SQL',
       'CI/CD & scripts',
       'Rendimiento Web Vitals',
       'Accesibilidad (WCAG)',
@@ -76,8 +77,14 @@ const es = {
     subtitle: 'Cómo puedo ayudar a tu equipo o producto.',
     items: [
       {
+        id: 'api',
+        title: 'Backend e Integración de APIs',
+        description:
+          'Endpoints REST/GraphQL y datos en servidor; consumo y orquestación de APIs externas. Contratos claros, validación y errores coherentes entre backend y cliente.',
+      },
+      {
         id: 'frontend',
-        title: 'Desarrollo frontend',
+        title: 'Desarrollo Frontend',
         description:
           'Interfaces modulares, tipado fuerte y patrones escalables alineados con diseño y negocio.',
       },
@@ -86,12 +93,6 @@ const es = {
         title: 'Automatización de procesos',
         description:
           'Scripts, integraciones y flujos que eliminan tareas repetitivas y reducen errores manuales.',
-      },
-      {
-        id: 'api',
-        title: 'Integración de APIs',
-        description:
-          'Consumo y orquestación de servicios externos con manejo robusto de errores y estados.',
       },
       {
         id: 'perf',
@@ -157,10 +158,10 @@ const es = {
       greeting: '¡Hola! Pregunta por proyectos, servicios o stack tecnológico.',
       projects: 'En Proyectos verás cuatro ejemplos: panel operativo, conector CRM, design system y landing optimizada.',
       services:
-        'Ofrezco desarrollo frontend, automatización, integración de APIs y optimización de rendimiento.',
+        'Ofrezco backend e integración de APIs, desarrollo frontend, automatización de procesos y optimización de rendimiento.',
       automation:
         'La automatización incluye scripts, integraciones y flujos con reintentos y monitorización para reducir trabajo manual.',
-      api: 'Integro APIs REST/GraphQL con validación de datos, manejo de errores y estados de carga claros para el usuario.',
+      api: 'Diseño e integro APIs y capa backend: endpoints, datos en servidor y consumo de servicios externos, con validación, errores controlados y estados claros.',
       contact: 'Usa el formulario o los enlaces a WhatsApp y redes en la sección Contacto.',
       stack: 'Stack habitual: React, TypeScript, Tailwind, pruebas con Vitest y foco en accesibilidad.',
       experience:
